@@ -1,0 +1,86 @@
+/* post-form.component.css */
+
+/* Center the container both horizontally and vertically */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* 100% of the viewport height */
+    background-color: #f0f0f0;
+    /* Set background color if desired */
+}
+
+/* Style the form */
+.post-form {
+    width: 300px;
+    /* Set the width of the form */
+    padding: 20px;
+    /* Add some padding for spacing inside the form */
+    border: 1px solid #ccc;
+    /* Add a border for a clean look */
+    border-radius: 10px;
+    /* Optional: Add rounded corners */
+    background-color: white;
+    /* Set background color of the form */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    /* Optional: Add box shadow for depth */
+}
+
+/* Style the title */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    /* Set the color of the title */
+    text-decoration: underline;
+    /* Add underline to the title */
+}
+
+/* Style the form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    /* Add some space between labels and inputs */
+}
+
+/* Style the form inputs and textarea */
+input[type="text"],
+textarea {
+    width: calc(100% - 20px);
+    /* Make inputs and textarea 100% width minus padding */
+    padding: 10px;
+    /* Add padding for input and textarea */
+    margin-bottom: 15px;
+    /* Add some space between inputs */
+    border: 1px solid #ccc;
+    /* Add a border for inputs */
+    border-radius: 5px;
+    /* Optional: Add rounded corners for inputs */
+}
+
+/* Style the checkbox */
+input[type="checkbox"] {
+    margin-right: 5px;
+    /* Add space between checkbox and label text */
+}
+
+/* Style the displayed post title */
+.displayed-title {
+    margin-top: 20px; /* Add space between the form and the displayed title */
+    font-weight: bold; /* Make the displayed title bold */
+  }
+  
+  /* styles.css */
+.max-size-image {
+    max-width: 100px;
+    max-height: 100px;
+}
+
+/* styles.css or component styles */
+.centered-image-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100%; /* Ensure the container takes up the full height of the parent div */
+}

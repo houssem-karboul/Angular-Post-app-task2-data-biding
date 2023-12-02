@@ -1,0 +1,41 @@
+<div class="center-container">
+    <div class="form-container">
+        <h1>My Post App 1 😄  </h1>
+        <form class="post-form">
+            <label for="postTitle">Post Title:</label>
+            <input type="text" id="postTitle" [(ngModel)]="postTitle" name="postTitle" />
+
+            <label for="postDetails">Post Details:</label>
+            <textarea id="postDetails" [(ngModel)]="postDetails" name="postDetails"></textarea>
+
+            <label for="imageUrl">Image URL:</label>
+            <input type="text" id="imageUrl" [(ngModel)]="imageUrl" name="imageUrl" />
+            <label for="postUrl">Post URL:</label>
+            <input type="text" id="postUrl" [(ngModel)]="postUrl" name="postUrl" />
+            <label>
+                <input type="checkbox" [(ngModel)]="addBackground" name="addBackground" />
+                Add Background
+            </label>
+
+            <!-- Display the postTitle dynamically at the end of the form -->
+            <div *ngIf="postTitle" class="displayed-title"
+                [ngStyle]="{'background-color': addBackground ? 'red' : 'transparent'}">
+                <strong>Post Title:</strong> {{ postTitle }}
+            </div>
+
+            <!-- Display the postDetails dynamically at the end of the form -->
+            <div *ngIf="postDetails" class="displayed-title"
+                [ngStyle]="{'background-color': addBackground ? 'red' : 'transparent'}">
+                <strong>Post Details:</strong> {{ postDetails }}
+            </div>
+
+            <!-- Display the image dynamically at the end of the form -->
+
+            <div *ngIf="imageUrl" class="centered-image-container">
+                <a [href]="postUrl">
+                    <img [src]="imageUrl" [alt]="imageUrl" class="max-size-image">
+                </a>
+            </div>
+        </form>
+    </div>
+</div>

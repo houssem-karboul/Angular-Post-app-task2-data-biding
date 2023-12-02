@@ -1,0 +1,27 @@
+/* Define styles for the menu container */
+.menu {
+    background-color: #f2f2f2; /* Set the background color of the menu */
+    overflow: hidden; /* Hide any content that overflows the menu */
+  }
+  
+  /* Define styles for menu links */
+  .menu a {
+    float: left; /* Float the links to the left, creating a horizontal menu */
+    display: block; /* Make the links block elements for easy styling */
+    color: black; /* Set the default text color of the links */
+    text-align: center; /* Center the text inside the links */
+    padding: 14px 16px; /* Add padding around the text inside the links */
+    text-decoration: none; /* Remove the default underline style from links */
+  }
+  
+  /* Define styles for menu links when hovered over */
+  .menu a:hover {
+    background-color: #ddd; /* Change background color when the link is hovered */
+  }
+  
+  /* Define styles for active menu link */
+  .menu a.active {
+    background-color: #4caf50; /* Set background color for the active link */
+    color: white; /* Set text color to white for better visibility on the active link */
+  }
+  
