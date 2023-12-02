@@ -58,8 +58,6 @@ dummyPosts: any;
       comments: ["Build a portfolio website.", "Create a web app for tracking daily habits."]
     }
   ];  
-  
     throw new Error('Method not implemented.');
   }
-
 }
