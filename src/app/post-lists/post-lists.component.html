@@ -1,10 +1,17 @@
 <!-- post-lists.component.html -->
 
 <!-- post-lists.component.html -->
-
-<div *ngFor="let post of dummyPosts">
+<div *ngIf="dummyPosts.length >0 ; else templateSubstitute">
+  <div *ngFor="let post of dummyPosts">
     <!-- Pass the entire post object to PostComponent using string interpolation -->
     <app-post [post]="post"></app-post>
   </div>
-  
-  
+
+</div>
+
+<ng-template #templateSubstitute>
+  <p>
+    No Data found !
+  </p>
+
+</ng-template>
