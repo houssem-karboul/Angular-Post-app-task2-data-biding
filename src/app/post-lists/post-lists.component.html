@@ -1,13 +1,19 @@
 <!-- post-lists.component.html -->
 
 <!-- post-lists.component.html -->
-<div *ngIf="dummyPosts.length >0 ; else templateSubstitute">
+<div *ngIf="dummyPosts.length >0 ;then mainTemplate else templateSubstitute">
+</div>
+
+<!-- ng-template vs div :: ng-template is often used with structural directives like *ngIf to conditionally render content.
+   The content inside an <ng-template> is not added to the DOM unless the condition is true 
+    -->
+
+<ng-template #mainTemplate>
   <div *ngFor="let post of dummyPosts">
     <!-- Pass the entire post object to PostComponent using string interpolation -->
     <app-post [post]="post"></app-post>
   </div>
-
-</div>
+</ng-template>
 
 <ng-template #templateSubstitute>
   <p>
