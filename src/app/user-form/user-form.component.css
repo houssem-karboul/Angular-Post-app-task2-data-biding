@@ -1,0 +1,50 @@
+/* user-form.component.css */
+
+/* Center the container both horizontally and vertically */
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+/* Style the form */
+.user-form {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the title */
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Style the form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Style the form inputs and textarea */
+input[type="text"],
+textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style the displayed title */
+.displayed-info {
+    margin-top: 20px;
+    font-weight: bold;
+}

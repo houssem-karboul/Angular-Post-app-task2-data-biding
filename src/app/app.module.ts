@@ -6,6 +6,7 @@ import { PostFormComponent } from './post-form/post-form.component';
 import { PostComponent } from './post/post.component';
 import { PostListsComponent } from './post-lists/post-lists.component';
 import { MenuComponent } from './menu/menu.component';
+import { UserFormComponent } from './user-form/user-form.component';
 
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { MenuComponent } from './menu/menu.component';
     PostFormComponent,
     PostComponent,
     PostListsComponent,
-    MenuComponent
+    MenuComponent,
+    UserFormComponent
   ],
   imports: [
     BrowserModule,
